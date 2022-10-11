@@ -3,8 +3,9 @@ import NavBar from "../Components/NavBar";
 
 const HomePage = () => {
   return (
-    <div>
-      <div>HomePage</div>
+    <div className="homePage">
+      <div className="homePageUser">User's</div>
+      <div className="homePageHeader">Note Book</div>
       <NavBar />
     </div>
   );

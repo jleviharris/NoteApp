@@ -6,9 +6,63 @@
   flex-direction: column;
   align-items: center;
 }
-.homePageHeader {
+.myNotes {
+  width: 100vw;
+  height: 100vh;
+  background: chocolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userPage {
+  width: 100vw;
+  height: 100vh;
+  background: chocolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePageUser {
   margin-top: 3rem;
   font-size: 2rem;
+}
+.homePageHeader {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.myNotesPageHeader {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.userPageBody {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+.userPageHeader {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.userPageGrouping {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.userInfoGrouping {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+}
+.deleteAccount {
+  background: rgb(245, 54, 54);
+  margin: 1rem;
 }
 .hpIndividualNotes {
   width: 85%;
@@ -30,4 +84,64 @@
   text-align: center;
   padding: 1rem;
   box-shadow: 0px 0px 8px #000000;
+}
+#usernamePortal .container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+#passwordPortal .container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.container .modal {
+  z-index: 1;
+  width: 350px;
+  height: 220px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: relative;
+  animation: animate 0.3s;
+  flex-direction: column;
+  padding: 1rem;
+}
+.closeModal {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 8px 11px;
+  background: crimson;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+@keyframes animate {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
 }

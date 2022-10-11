@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MyNotes = () => {
   return (
-    <div className="homePage">
-      <div className="homePageHeader">My Notes</div>
+    <div className="myNotes">
+      <div className="myNotesPageHeader">My Notes</div>
+      <Link to="/">
+        <button>Home</button>
+      </Link>
       <div className="hpIndividualNotes">
         {/* for each note map div with date and then div with note header */}
         <div className="hpSingleNote">
